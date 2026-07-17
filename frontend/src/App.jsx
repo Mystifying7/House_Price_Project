@@ -22,12 +22,20 @@ export default function App() {
   const handlePredict = async (e) => {
     e.preventDefault();
     setLoading(true);
+    
+    // Fallback numbers before sending payload to API if inputs were left empty/0
+    const finalPayload = {
+      ...formData,
+      total_sqft: formData.total_sqft || 300,
+      bhk: formData.bhk || 1,
+      bath: formData.bath || 1
+    };
+
     try {
-      // ✅ ENDPOINT FIXED: Changed from /api/metadata to /api/predict
       const response = await fetch('https://bangalore-house-price-api.onrender.com/api/predict', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData)
+        body: JSON.stringify(finalPayload)
       });
       const data = await response.json();
       setPrediction(data.predicted_price);
@@ -45,6 +53,15 @@ export default function App() {
       return `₹${crores} Crores`;
     }
     return `₹${price.toFixed(2)} Lakhs`;
+  };
+
+  // Safe handler to allow manual input clearing (zero shift logic)
+  const handleInputChange = (field, value) => {
+    if (value === "") {
+      setFormData(prev => ({ ...prev, [field]: "" }));
+    } else {
+      setFormData(prev => ({ ...prev, [field]: parseInt(value) || 0 }));
+    }
   };
 
   return (
@@ -94,35 +111,41 @@ export default function App() {
           {/* Grid for Parameters */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             
+            {/* BHK Input */}
             <div className="bg-slate-950/40 border border-slate-800/60 rounded-2xl p-4 flex flex-col justify-between">
               <label className="block text-xs font-semibold tracking-wider uppercase text-slate-400 mb-2">
                 Layout (BHK)
               </label>
               <input 
-                type="number" min="1" max="10" value={formData.bhk}
-                onChange={(e) => setFormData({...formData, bhk: parseInt(e.target.value) || 1})}
+                type="number" 
+                value={formData.bhk}
+                onChange={(e) => handleInputChange('bhk', e.target.value)}
                 className="w-full bg-transparent text-2xl font-bold text-slate-100 focus:outline-none border-b border-transparent focus:border-emerald-500/40 pb-1" 
               />
             </div>
 
+            {/* Bathrooms Input */}
             <div className="bg-slate-950/40 border border-slate-800/60 rounded-2xl p-4 flex flex-col justify-between">
               <label className="block text-xs font-semibold tracking-wider uppercase text-slate-400 mb-2">
                 Bathrooms
               </label>
               <input 
-                type="number" min="1" max="10" value={formData.bath}
-                onChange={(e) => setFormData({...formData, bath: parseInt(e.target.value) || 1})}
+                type="number" 
+                value={formData.bath}
+                onChange={(e) => handleInputChange('bath', e.target.value)}
                 className="w-full bg-transparent text-2xl font-bold text-slate-100 focus:outline-none border-b border-transparent focus:border-emerald-500/40 pb-1" 
               />
             </div>
 
+            {/* Area Sqft Input */}
             <div className="bg-slate-950/40 border border-slate-800/60 rounded-2xl p-4 flex flex-col justify-between">
               <label className="block text-xs font-semibold tracking-wider uppercase text-slate-400 mb-2">
                 Area (Sq. Ft.)
               </label>
               <input 
-                type="number" min="300" max="10000" value={formData.total_sqft} step="50"
-                onChange={(e) => setFormData({...formData, total_sqft: parseInt(e.target.value) || 300})}
+                type="number" 
+                value={formData.total_sqft}
+                onChange={(e) => handleInputChange('total_sqft', e.target.value)}
                 className="w-full bg-transparent text-2xl font-bold text-slate-100 focus:outline-none border-b border-transparent focus:border-emerald-500/40 pb-1" 
               />
             </div>
