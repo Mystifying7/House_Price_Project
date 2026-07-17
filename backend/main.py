@@ -1,3 +1,20 @@
+import subprocess
+import sys
+
+# Script run hote hi sabse pehle automatically background mein libraries install ho jayengi
+try:
+    import flask
+    import flask_cors
+    import pandas
+    import numpy
+    import sklearn
+except ImportError:
+    print("⏳ Auto-installing missing dependencies on Render...")
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "-r", "requirements.txt"])
+
+# ==========================================
+# AAPKA ORIGINAL CODE AB YAHA SE START HOGA:
+# ==========================================
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import numpy as np
