@@ -5,6 +5,7 @@ export default function App() {
   const [formData, setFormData] = useState({ total_sqft: 1200, bhk: 2, bath: 2, location: '' });
   const [prediction, setPrediction] = useState(null);
   const [loading, setLoading] = useState(false);
+  const [areaError, setAreaError] = useState('');
 
   // Fetch unique locations from Flask backend on mount
   useEffect(() => {
@@ -22,9 +23,9 @@ export default function App() {
   const handlePredict = async (e) => {
     e.preventDefault();
     
-    // Prevent sub-standard area queries before firing API payload
-    if (formData.total_sqft < 300) {
-      alert("Area cannot be less than 300 Sq. Ft. for accurate ML prediction.");
+    // Stop submission if validation error exists
+    if (formData.total_sqft !== "" && formData.total_sqft < 300) {
+      setAreaError('Please enter more than 300sq ft');
       return;
     }
 
@@ -65,8 +66,19 @@ export default function App() {
   const handleInputChange = (field, value) => {
     if (value === "") {
       setFormData(prev => ({ ...prev, [field]: "" }));
+      if (field === 'total_sqft') setAreaError('');
     } else {
-      setFormData(prev => ({ ...prev, [field]: parseInt(value) || 0 }));
+      const parsedValue = parseInt(value) || 0;
+      setFormData(prev => ({ ...prev, [field]: parsedValue }));
+      
+      // Live feedback check while typing
+      if (field === 'total_sqft') {
+        if (parsedValue < 300) {
+          setAreaError('Please enter more than 300sq ft');
+        } else {
+          setAreaError('');
+        }
+      }
     }
   };
 
@@ -74,6 +86,7 @@ export default function App() {
   const handleBlurValidation = (field, minValue) => {
     if (formData[field] === "" || formData[field] < minValue) {
       setFormData(prev => ({ ...prev, [field]: minValue }));
+      if (field === 'total_sqft') setAreaError('');
     }
   };
 
@@ -155,27 +168,34 @@ export default function App() {
             </div>
 
             {/* Area Sqft Input */}
-            <div className="bg-slate-950/40 border border-slate-800/60 rounded-2xl p-4 flex flex-col justify-between">
+            <div className="bg-slate-950/40 border border-slate-800/60 rounded-2xl p-4 flex flex-col justify-between relative">
               <label className="block text-xs font-semibold tracking-wider uppercase text-slate-400 mb-2">
                 Area (Sq. Ft.)
               </label>
               <input 
                 type="number" 
-                min="300"
                 value={formData.total_sqft}
                 onChange={(e) => handleInputChange('total_sqft', e.target.value)}
                 onBlur={() => handleBlurValidation('total_sqft', 300)}
-                className="w-full bg-transparent text-2xl font-bold text-slate-100 focus:outline-none border-b border-transparent focus:border-emerald-500/40 pb-1" 
+                className={`w-full bg-transparent text-2xl font-bold text-slate-100 focus:outline-none border-b border-transparent pb-1 transition-colors ${areaError ? 'focus:border-red-500/60' : 'focus:border-emerald-500/40'}`} 
               />
             </div>
 
           </div>
 
+          {/* 🔴 Real-time Inline Notification Message */}
+          {areaError && (
+            <div className="text-red-400 text-xs font-semibold tracking-wide flex items-center space-x-1.5 animate-pulse bg-red-950/30 p-2.5 rounded-lg border border-red-900/30">
+              <span>⚠️</span>
+              <span>{areaError}</span>
+            </div>
+          )}
+
           {/* Action Trigger Button */}
           <button 
             type="submit" 
-            disabled={loading}
-            className="w-full py-4 bg-gradient-to-r from-emerald-500 via-teal-500 to-blue-600 hover:opacity-95 text-slate-950 font-black rounded-xl tracking-wider uppercase text-xs shadow-lg shadow-emerald-500/10 transition-all duration-300 transform active:scale-[0.99] disabled:opacity-40"
+            disabled={loading || areaError !== ''}
+            className="w-full py-4 bg-gradient-to-r from-emerald-500 via-teal-500 to-blue-600 hover:opacity-95 text-slate-950 font-black rounded-xl tracking-wider uppercase text-xs shadow-lg shadow-emerald-500/10 transition-all duration-300 transform active:scale-[0.99] disabled:opacity-30 disabled:pointer-events-none"
           >
             {loading ? (
               <span className="flex items-center justify-center space-x-2">
