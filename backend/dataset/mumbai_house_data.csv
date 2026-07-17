@@ -1,0 +1,1001 @@
+location,total_sqft,bath,bhk,price
+Andheri East,608,1,1,65.79
+Bandra West,882,2,2,179.08
+Juhu,1027,2,2,248.26
+Juhu,986,2,2,214.27
+Powai,1423,3,3,222.17
+Chembur,479,1,1,57.77
+Powai,1423,2,3,192.31
+Malad West,564,1,1,61.07
+Andheri East,2176,3,4,220.83
+Borivali West,2472,4,4,287.77
+Andheri East,1116,3,3,120.31
+Malad West,2355,4,4,245.2
+Malad West,884,2,2,91.14
+Bandra West,2283,4,4,484.07
+Dadar West,518,1,1,62.07
+Dadar West,1536,3,3,169.21
+Malad West,1248,3,3,134.62
+Andheri East,1380,3,3,163.43
+Chembur,1321,3,3,151.42
+Goregaon East,947,2,2,99.12
+Juhu,1353,3,3,322.4
+Dadar West,1730,3,4,182.16
+Andheri West,501,1,1,51.97
+Kandivali East,1402,2,3,164.62
+Dadar West,1723,3,4,177.85
+Thane West,780,2,2,78.72
+Borivali West,568,1,1,60.31
+Andheri West,574,1,1,57.46
+Thane West,1321,2,3,146.6
+Bandra West,603,1,1,124.2
+Andheri West,2278,4,4,235.1
+Malad West,2370,4,4,280.26
+Borivali West,2205,4,4,260.95
+Borivali West,1524,3,3,163.05
+Powai,617,1,1,98.16
+Juhu,643,1,1,150.13
+Dadar West,1231,2,3,146.28
+Goregaon East,1860,4,4,205.74
+Borivali West,1935,3,4,218.29
+Andheri West,1222,3,3,130.0
+Goregaon East,2269,3,4,242.96
+Goregaon East,722,2,2,83.74
+Borivali West,584,1,1,58.36
+Powai,1648,3,4,223.52
+Powai,1331,3,3,199.6
+Kandivali East,1889,3,4,206.8
+Andheri West,1192,3,3,140.57
+Malad West,2241,4,4,250.28
+Andheri West,1156,2,3,134.11
+Powai,1048,2,2,150.51
+Chembur,872,2,2,87.56
+Chembur,2103,4,4,214.54
+Chembur,1977,3,4,229.07
+Juhu,2292,4,4,470.97
+Juhu,2067,4,4,474.18
+Malad West,2246,4,4,248.45
+Borivali West,945,2,2,107.03
+Andheri West,486,1,1,53.67
+Goregaon East,1137,2,3,122.95
+Borivali West,1973,4,4,202.42
+Goregaon East,2310,3,4,248.53
+Andheri West,1873,3,4,224.75
+Chembur,1720,3,4,185.78
+Chembur,2230,3,4,255.47
+Kandivali East,1603,3,4,192.79
+Andheri West,522,1,1,54.08
+Goregaon East,834,2,2,95.94
+Andheri East,2004,4,4,216.61
+Powai,1486,2,3,210.22
+Andheri East,443,1,1,53.12
+Juhu,1709,4,4,401.04
+Juhu,1139,3,3,253.9
+Juhu,1462,2,3,305.46
+Chembur,750,2,2,89.08
+Bandra West,1488,2,3,358.11
+Bandra West,1672,3,4,382.62
+Kandivali East,2359,3,4,240.63
+Borivali West,2155,4,4,223.43
+Thane West,478,1,1,53.47
+Bandra West,941,2,2,193.59
+Bandra West,962,2,2,209.77
+Chembur,403,1,1,43.25
+Andheri East,2029,3,4,225.61
+Juhu,765,2,2,180.6
+Bandra West,1693,4,4,366.72
+Bandra West,2396,4,4,483.49
+Dadar West,1782,4,4,199.75
+Andheri West,1316,2,3,134.1
+Juhu,583,1,1,127.59
+Juhu,1816,3,4,411.4
+Powai,1501,2,3,231.63
+Powai,2234,4,4,352.41
+Goregaon East,1242,2,3,135.75
+Malad West,897,2,2,102.19
+Dadar West,622,1,1,74.52
+Bandra West,477,1,1,97.84
+Kandivali East,892,2,2,92.44
+Goregaon East,487,1,1,49.29
+Malad West,1883,4,4,214.44
+Thane West,2389,3,4,270.57
+Andheri West,1150,2,3,114.48
+Andheri West,2085,4,4,209.91
+Bandra West,506,1,1,117.89
+Malad West,477,1,1,50.88
+Thane West,496,1,1,58.65
+Chembur,871,2,2,88.87
+Borivali West,1291,3,3,129.32
+Malad West,471,1,1,47.63
+Borivali West,1477,3,3,174.91
+Andheri East,1523,3,3,159.44
+Bandra West,1676,3,4,374.3
+Malad West,2327,4,4,278.59
+Chembur,2358,3,4,249.7
+Bandra West,810,2,2,169.94
+Andheri East,2241,4,4,244.97
+Dadar West,508,1,1,58.98
+Dadar West,1972,4,4,234.47
+Juhu,517,1,1,124.28
+Borivali West,1448,2,3,154.58
+Bandra West,1107,3,3,248.58
+Andheri West,634,1,1,75.53
+Dadar West,1416,2,3,169.98
+Andheri East,1507,2,3,163.02
+Andheri East,1848,4,4,188.68
+Malad West,1162,3,3,131.46
+Juhu,1485,3,3,322.28
+Malad West,1888,3,4,216.51
+Powai,548,1,1,87.2
+Dadar West,450,1,1,49.41
+Juhu,2316,4,4,482.31
+Goregaon East,492,1,1,57.23
+Chembur,1513,3,3,160.73
+Andheri West,1372,2,3,139.63
+Juhu,632,1,1,141.87
+Andheri West,462,1,1,53.38
+Andheri East,1683,4,4,166.86
+Bandra West,711,2,2,157.1
+Kandivali East,1869,4,4,185.32
+Powai,1365,2,3,213.26
+Goregaon East,2457,4,4,292.56
+Andheri West,723,2,2,75.98
+Malad West,1229,2,3,137.92
+Bandra West,768,2,2,162.63
+Chembur,1801,3,4,202.8
+Andheri East,623,1,1,70.57
+Kandivali East,731,2,2,79.51
+Juhu,428,1,1,100.39
+Borivali West,724,2,2,73.1
+Bandra West,1870,4,4,394.77
+Goregaon East,1681,4,4,189.75
+Borivali West,2434,3,4,271.72
+Andheri West,558,1,1,63.6
+Goregaon East,1229,3,3,142.79
+Chembur,405,1,1,42.6
+Dadar West,860,2,2,90.85
+Andheri East,1505,3,3,176.7
+Powai,1027,2,2,154.61
+Andheri West,1312,3,3,130.92
+Andheri East,517,1,1,61.95
+Chembur,903,2,2,99.18
+Powai,2147,4,4,300.44
+Andheri East,1988,4,4,198.92
+Andheri West,556,1,1,66.38
+Malad West,1145,2,3,113.44
+Andheri West,1131,2,3,134.68
+Andheri East,425,1,1,47.69
+Thane West,723,2,2,71.85
+Chembur,2463,3,4,284.42
+Thane West,1227,2,3,122.5
+Thane West,767,2,2,79.2
+Goregaon East,1448,2,3,157.36
+Powai,527,1,1,83.1
+Chembur,1102,2,3,113.05
+Powai,1385,2,3,201.49
+Powai,1178,2,3,165.61
+Andheri East,2369,3,4,245.39
+Powai,1333,2,3,219.05
+Thane West,1277,2,3,146.49
+Andheri West,2388,4,4,273.25
+Powai,1259,2,3,202.35
+Andheri East,488,1,1,56.34
+Goregaon East,742,2,2,79.81
+Andheri West,2370,4,4,275.2
+Juhu,1981,3,4,415.47
+Kandivali East,2440,3,4,276.58
+Chembur,2448,4,4,272.8
+Dadar West,500,1,1,57.78
+Malad West,819,2,2,90.81
+Thane West,569,1,1,57.97
+Thane West,2137,4,4,231.52
+Malad West,634,1,1,66.15
+Thane West,1408,3,3,157.27
+Thane West,849,2,2,87.4
+Thane West,2279,3,4,243.22
+Malad West,1757,4,4,193.96
+Malad West,467,1,1,46.61
+Chembur,2255,4,4,229.29
+Chembur,570,1,1,66.99
+Andheri West,932,2,2,100.2
+Malad West,2244,4,4,248.79
+Andheri East,1787,3,4,200.67
+Chembur,1281,2,3,129.15
+Borivali West,1454,2,3,165.13
+Goregaon East,928,2,2,102.69
+Dadar West,497,1,1,51.38
+Malad West,788,2,2,78.24
+Kandivali East,913,2,2,103.63
+Malad West,719,2,2,79.71
+Malad West,1449,3,3,152.12
+Bandra West,1784,3,4,428.16
+Juhu,2243,4,4,525.2
+Borivali West,564,1,1,62.2
+Powai,1324,2,3,181.05
+Kandivali East,815,2,2,98.41
+Dadar West,2022,3,4,210.15
+Chembur,470,1,1,56.03
+Thane West,2299,3,4,253.95
+Bandra West,801,2,2,164.83
+Borivali West,582,1,1,63.82
+Borivali West,1156,3,3,119.6
+Dadar West,807,2,2,94.64
+Goregaon East,837,2,2,85.67
+Andheri West,725,2,2,85.94
+Kandivali East,1876,4,4,197.5
+Andheri East,1976,3,4,233.38
+Malad West,2201,4,4,222.24
+Malad West,630,1,1,71.67
+Powai,1747,3,4,268.21
+Malad West,1029,2,2,105.56
+Malad West,519,1,1,57.51
+Borivali West,1446,3,3,156.32
+Borivali West,1329,2,3,133.96
+Malad West,1148,2,3,120.95
+Borivali West,1331,2,3,159.32
+Andheri East,1347,2,3,159.19
+Borivali West,779,2,2,83.64
+Andheri East,1388,3,3,167.74
+Bandra West,836,2,2,188.2
+Dadar West,1256,3,3,151.44
+Chembur,781,2,2,81.55
+Borivali West,1638,3,4,166.94
+Kandivali East,888,2,2,101.73
+Thane West,529,1,1,55.27
+Chembur,1547,2,3,184.9
+Goregaon East,795,2,2,92.5
+Borivali West,1784,4,4,183.92
+Bandra West,794,2,2,163.64
+Dadar West,1514,2,3,160.1
+Juhu,1938,3,4,463.96
+Andheri West,944,2,2,101.64
+Bandra West,1824,4,4,441.12
+Thane West,1700,3,4,175.96
+Chembur,1177,3,3,129.7
+Dadar West,1256,2,3,147.88
+Andheri East,1474,3,3,147.63
+Goregaon East,821,2,2,96.45
+Andheri West,842,2,2,95.3
+Malad West,509,1,1,58.25
+Dadar West,1943,4,4,232.09
+Juhu,1810,3,4,407.65
+Chembur,2404,3,4,285.84
+Chembur,1913,3,4,196.0
+Powai,801,2,2,129.6
+Kandivali East,783,2,2,91.68
+Borivali West,648,1,1,65.87
+Juhu,428,1,1,98.65
+Malad West,1140,3,3,133.35
+Borivali West,1525,2,3,164.89
+Goregaon East,417,1,1,44.43
+Powai,1273,3,3,209.71
+Dadar West,1438,2,3,151.77
+Powai,1524,2,3,227.54
+Andheri East,895,2,2,100.24
+Malad West,1282,2,3,146.91
+Kandivali East,454,1,1,52.09
+Chembur,1319,3,3,143.16
+Chembur,1732,3,4,176.08
+Juhu,1449,3,3,332.36
+Goregaon East,481,1,1,51.04
+Andheri West,1244,2,3,148.37
+Goregaon East,1502,3,3,169.94
+Bandra West,1137,2,3,250.09
+Andheri West,2323,4,4,266.77
+Kandivali East,418,1,1,48.86
+Bandra West,1637,4,4,371.64
+Bandra West,1632,4,4,338.42
+Thane West,784,2,2,81.91
+Andheri East,1178,2,3,121.98
+Dadar West,407,1,1,45.15
+Borivali West,477,1,1,54.75
+Bandra West,1675,3,4,402.64
+Chembur,948,2,2,105.72
+Bandra West,2386,4,4,575.11
+Goregaon East,1143,3,3,118.23
+Malad West,531,1,1,63.26
+Powai,1505,2,3,224.69
+Andheri West,570,1,1,63.94
+Borivali West,883,2,2,90.57
+Powai,534,1,1,80.69
+Andheri East,521,1,1,54.31
+Chembur,907,2,2,97.28
+Chembur,933,2,2,99.42
+Malad West,2148,3,4,213.49
+Andheri West,1396,2,3,141.76
+Andheri West,1408,3,3,165.36
+Andheri East,402,1,1,43.3
+Goregaon East,1492,2,3,163.59
+Bandra West,2041,4,4,412.17
+Bandra West,937,2,2,198.76
+Kandivali East,1018,2,2,117.22
+Chembur,1108,2,3,129.15
+Bandra West,1135,3,3,265.65
+Andheri West,2466,4,4,291.47
+Borivali West,1244,2,3,147.82
+Borivali West,2495,3,4,282.16
+Andheri East,1377,2,3,147.7
+Juhu,1490,3,3,359.02
+Goregaon East,1298,2,3,155.08
+Borivali West,822,2,2,91.01
+Thane West,500,1,1,52.84
+Goregaon East,574,1,1,57.21
+Andheri East,472,1,1,50.7
+Powai,642,1,1,105.7
+Malad West,953,2,2,96.46
+Dadar West,576,1,1,59.49
+Bandra West,2400,4,4,568.47
+Powai,809,2,2,128.24
+Kandivali East,733,2,2,84.79
+Borivali West,818,2,2,86.74
+Malad West,2498,3,4,275.44
+Borivali West,648,1,1,74.66
+Borivali West,1033,2,2,123.46
+Bandra West,1959,3,4,432.77
+Thane West,1539,2,3,163.64
+Thane West,595,1,1,64.44
+Goregaon East,955,2,2,95.19
+Juhu,881,2,2,182.17
+Juhu,1048,2,2,219.08
+Chembur,2445,4,4,291.05
+Andheri West,443,1,1,48.83
+Chembur,482,1,1,58.28
+Dadar West,819,2,2,82.29
+Andheri East,2197,3,4,249.13
+Thane West,614,1,1,60.87
+Borivali West,1856,3,4,200.45
+Juhu,1021,2,2,246.66
+Malad West,1469,3,3,158.19
+Andheri West,720,2,2,71.87
+Juhu,646,1,1,147.43
+Malad West,981,2,2,99.88
+Thane West,429,1,1,44.22
+Dadar West,2370,4,4,237.19
+Powai,1302,2,3,185.35
+Juhu,2109,3,4,499.16
+Malad West,938,2,2,102.54
+Bandra West,1466,3,3,330.29
+Juhu,1148,2,3,258.5
+Goregaon East,885,2,2,97.36
+Andheri East,1448,3,3,148.6
+Malad West,519,1,1,57.13
+Malad West,468,1,1,52.77
+Andheri East,1267,3,3,147.06
+Powai,738,2,2,113.43
+Dadar West,1223,3,3,135.17
+Andheri West,968,2,2,113.65
+Chembur,2237,4,4,264.96
+Andheri West,1142,3,3,136.29
+Chembur,1134,2,3,122.9
+Kandivali East,739,2,2,85.56
+Andheri West,879,2,2,102.52
+Andheri West,1532,2,3,154.05
+Kandivali East,425,1,1,46.07
+Chembur,1499,3,3,157.41
+Chembur,1794,3,4,208.25
+Powai,1191,2,3,165.3
+Juhu,858,2,2,185.18
+Kandivali East,1689,3,4,175.55
+Andheri West,835,2,2,83.99
+Dadar West,413,1,1,48.34
+Powai,1422,3,3,200.65
+Andheri West,571,1,1,60.73
+Borivali West,1150,2,3,116.58
+Thane West,1613,4,4,186.34
+Andheri East,1212,3,3,133.8
+Thane West,820,2,2,91.34
+Andheri West,2158,3,4,247.01
+Goregaon East,963,2,2,99.17
+Chembur,1525,2,3,153.27
+Dadar West,2136,4,4,243.43
+Powai,449,1,1,64.85
+Kandivali East,642,1,1,70.52
+Juhu,1376,3,3,293.41
+Malad West,1232,3,3,122.61
+Malad West,2360,3,4,248.8
+Juhu,1369,3,3,329.11
+Andheri East,808,2,2,83.95
+Juhu,882,2,2,197.08
+Borivali West,2239,3,4,243.02
+Powai,1526,3,3,214.51
+Powai,568,1,1,88.24
+Powai,604,1,1,98.73
+Juhu,737,2,2,162.35
+Goregaon East,2147,3,4,248.28
+Thane West,516,1,1,59.2
+Malad West,464,1,1,48.81
+Chembur,834,2,2,91.43
+Dadar West,415,1,1,49.83
+Goregaon East,849,2,2,96.9
+Dadar West,1710,4,4,196.33
+Andheri West,1605,4,4,183.02
+Goregaon East,617,1,1,68.28
+Bandra West,2165,4,4,522.42
+Andheri West,1732,4,4,190.5
+Thane West,1431,3,3,153.47
+Goregaon East,1110,2,3,123.9
+Bandra West,409,1,1,98.52
+Bandra West,1157,2,3,241.57
+Andheri West,1105,3,3,122.29
+Andheri West,631,1,1,66.78
+Thane West,408,1,1,44.88
+Malad West,1861,3,4,208.12
+Malad West,2137,4,4,214.07
+Andheri West,470,1,1,55.67
+Dadar West,1473,3,3,166.88
+Juhu,1969,4,4,429.64
+Goregaon East,530,1,1,61.31
+Andheri East,469,1,1,50.22
+Malad West,2030,3,4,230.28
+Malad West,482,1,1,58.12
+Powai,1269,2,3,177.74
+Chembur,450,1,1,49.02
+Goregaon East,899,2,2,105.55
+Chembur,2467,3,4,286.75
+Andheri East,513,1,1,58.63
+Thane West,1342,2,3,150.04
+Goregaon East,1978,4,4,236.0
+Andheri West,985,2,2,103.83
+Andheri East,623,1,1,64.72
+Kandivali East,935,2,2,96.82
+Dadar West,1243,3,3,150.18
+Powai,864,2,2,131.07
+Powai,966,2,2,145.73
+Powai,2478,3,4,352.42
+Dadar West,801,2,2,96.7
+Kandivali East,849,2,2,86.19
+Andheri West,702,2,2,69.59
+Malad West,888,2,2,96.13
+Borivali West,1335,2,3,142.03
+Malad West,909,2,2,107.57
+Malad West,433,1,1,47.46
+Juhu,1796,4,4,403.5
+Dadar West,1653,3,4,180.1
+Andheri East,1228,2,3,142.62
+Malad West,2421,3,4,266.34
+Andheri West,1152,2,3,122.48
+Juhu,1828,3,4,417.89
+Powai,767,2,2,108.21
+Powai,2395,4,4,340.48
+Malad West,1420,3,3,154.26
+Bandra West,548,1,1,125.25
+Goregaon East,625,1,1,63.88
+Borivali West,748,2,2,87.45
+Andheri East,425,1,1,47.55
+Bandra West,1489,2,3,338.2
+Chembur,1994,3,4,238.54
+Andheri West,1970,3,4,220.54
+Chembur,2292,4,4,245.9
+Borivali West,1731,3,4,187.23
+Dadar West,1692,4,4,190.8
+Andheri East,1311,2,3,135.23
+Borivali West,1741,4,4,177.24
+Andheri West,1709,3,4,187.61
+Kandivali East,1755,4,4,196.18
+Malad West,1623,4,4,188.71
+Goregaon East,2231,3,4,253.19
+Borivali West,1337,2,3,160.71
+Borivali West,1644,3,4,166.19
+Dadar West,1198,2,3,139.5
+Thane West,2118,3,4,231.81
+Juhu,743,2,2,155.74
+Kandivali East,823,2,2,87.77
+Bandra West,845,2,2,198.58
+Goregaon East,793,2,2,84.38
+Andheri East,911,2,2,94.12
+Thane West,2457,3,4,295.51
+Malad West,2435,3,4,251.26
+Malad West,1266,2,3,133.78
+Dadar West,1780,4,4,211.02
+Juhu,1852,3,4,399.39
+Dadar West,489,1,1,53.86
+Powai,876,2,2,122.96
+Thane West,1236,2,3,147.74
+Powai,918,2,2,139.42
+Thane West,868,2,2,96.1
+Thane West,829,2,2,94.52
+Borivali West,2187,3,4,253.27
+Juhu,2039,3,4,488.32
+Dadar West,2267,4,4,257.9
+Thane West,1876,3,4,215.63
+Kandivali East,1777,3,4,213.19
+Kandivali East,986,2,2,110.82
+Andheri East,2500,4,4,280.11
+Kandivali East,780,2,2,80.38
+Thane West,1281,3,3,141.29
+Andheri East,1972,3,4,228.49
+Juhu,1366,3,3,310.43
+Chembur,555,1,1,57.87
+Malad West,1407,2,3,169.26
+Borivali West,643,1,1,75.46
+Chembur,1330,3,3,135.34
+Kandivali East,1236,3,3,123.65
+Thane West,410,1,1,43.83
+Juhu,2450,4,4,508.92
+Bandra West,1941,3,4,458.53
+Goregaon East,1010,2,2,100.67
+Powai,732,2,2,114.28
+Malad West,1360,3,3,151.44
+Powai,642,1,1,91.23
+Malad West,2244,4,4,228.75
+Borivali West,902,2,2,105.07
+Bandra West,2415,4,4,582.08
+Kandivali East,934,2,2,108.4
+Andheri West,2018,3,4,229.62
+Andheri East,1476,2,3,171.82
+Andheri West,1016,2,2,103.23
+Andheri West,1407,2,3,160.33
+Thane West,1396,3,3,153.67
+Bandra West,2028,3,4,440.74
+Powai,471,1,1,69.81
+Borivali West,2460,4,4,277.46
+Dadar West,518,1,1,52.49
+Juhu,818,2,2,181.58
+Juhu,1705,3,4,350.6
+Bandra West,802,2,2,170.77
+Bandra West,1771,4,4,405.29
+Chembur,948,2,2,108.07
+Dadar West,1117,2,3,113.98
+Chembur,1296,3,3,130.87
+Chembur,444,1,1,51.16
+Thane West,1376,2,3,145.43
+Andheri East,1546,3,3,166.15
+Bandra West,1403,2,3,279.44
+Andheri West,1732,4,4,203.74
+Chembur,954,2,2,111.47
+Chembur,1367,2,3,138.16
+Kandivali East,1517,2,3,155.76
+Juhu,857,2,2,186.36
+Malad West,1243,3,3,146.5
+Andheri East,1631,4,4,186.97
+Borivali West,1954,3,4,225.32
+Bandra West,406,1,1,84.57
+Malad West,717,2,2,84.64
+Bandra West,823,2,2,172.38
+Kandivali East,545,1,1,54.57
+Bandra West,931,2,2,222.3
+Andheri East,806,2,2,82.83
+Kandivali East,913,2,2,103.3
+Dadar West,1869,4,4,199.85
+Thane West,2069,4,4,216.76
+Dadar West,510,1,1,54.25
+Juhu,568,1,1,133.79
+Juhu,1012,2,2,220.46
+Malad West,1033,2,2,102.41
+Goregaon East,1844,4,4,201.82
+Malad West,1416,2,3,160.83
+Bandra West,1942,3,4,453.89
+Dadar West,1454,2,3,162.21
+Kandivali East,601,1,1,71.09
+Goregaon East,1000,2,2,110.83
+Chembur,1735,4,4,209.6
+Chembur,592,1,1,65.98
+Dadar West,509,1,1,51.66
+Powai,1307,3,3,200.55
+Chembur,2002,3,4,209.53
+Goregaon East,714,2,2,71.83
+Chembur,800,2,2,80.18
+Kandivali East,402,1,1,47.9
+Bandra West,759,2,2,183.56
+Goregaon East,2491,4,4,294.82
+Chembur,506,1,1,56.7
+Goregaon East,816,2,2,86.53
+Thane West,2148,3,4,225.81
+Goregaon East,1166,3,3,121.79
+Bandra West,2424,3,4,554.62
+Juhu,634,1,1,136.35
+Borivali West,1983,3,4,234.84
+Andheri West,1396,2,3,147.49
+Chembur,828,2,2,97.16
+Malad West,504,1,1,53.06
+Dadar West,1543,3,3,181.21
+Juhu,1519,2,3,326.47
+Powai,628,1,1,103.04
+Malad West,2222,4,4,254.06
+Bandra West,713,2,2,150.81
+Andheri West,1303,3,3,136.77
+Powai,424,1,1,59.28
+Juhu,2336,3,4,552.78
+Malad West,1459,2,3,146.49
+Chembur,484,1,1,58.24
+Kandivali East,933,2,2,97.5
+Andheri West,549,1,1,57.4
+Borivali West,532,1,1,54.51
+Juhu,501,1,1,101.06
+Thane West,586,1,1,66.9
+Powai,2030,3,4,316.37
+Malad West,787,2,2,83.06
+Bandra West,1304,2,3,290.87
+Dadar West,1206,3,3,119.59
+Kandivali East,1490,2,3,163.42
+Powai,633,1,1,98.84
+Kandivali East,1627,3,4,171.65
+Dadar West,833,2,2,96.69
+Juhu,490,1,1,116.47
+Andheri East,498,1,1,57.54
+Chembur,1341,2,3,154.42
+Juhu,634,1,1,136.09
+Powai,803,2,2,131.36
+Powai,448,1,1,62.36
+Malad West,618,1,1,65.88
+Juhu,1207,3,3,279.06
+Juhu,536,1,1,114.92
+Andheri West,2146,3,4,214.7
+Malad West,1469,3,3,168.1
+Goregaon East,1867,4,4,225.24
+Malad West,558,1,1,63.94
+Malad West,913,2,2,105.34
+Thane West,2314,4,4,261.67
+Kandivali East,436,1,1,43.8
+Andheri West,787,2,2,88.91
+Kandivali East,1268,2,3,147.89
+Dadar West,409,1,1,44.87
+Chembur,1783,4,4,207.55
+Bandra West,1498,3,3,304.89
+Dadar West,1428,2,3,153.93
+Malad West,436,1,1,43.5
+Powai,2426,4,4,340.27
+Bandra West,845,2,2,178.37
+Powai,2439,4,4,369.55
+Dadar West,1104,2,3,111.49
+Borivali West,1881,3,4,208.43
+Malad West,2040,4,4,245.56
+Andheri East,1309,2,3,150.68
+Chembur,476,1,1,53.28
+Powai,2366,3,4,361.02
+Chembur,842,2,2,98.17
+Andheri East,2021,3,4,215.94
+Juhu,919,2,2,221.88
+Borivali West,449,1,1,52.22
+Borivali West,1516,2,3,177.75
+Andheri East,1335,3,3,149.47
+Borivali West,1378,3,3,143.02
+Andheri East,618,1,1,63.44
+Borivali West,845,2,2,99.53
+Chembur,1338,3,3,133.87
+Thane West,1466,2,3,161.51
+Andheri West,2134,4,4,218.4
+Juhu,1626,4,4,367.37
+Bandra West,1484,3,3,309.66
+Andheri West,1412,3,3,146.38
+Malad West,610,1,1,67.83
+Powai,1634,3,4,221.72
+Juhu,1899,3,4,382.14
+Dadar West,2251,3,4,243.0
+Thane West,490,1,1,48.76
+Bandra West,408,1,1,89.02
+Andheri West,765,2,2,91.72
+Chembur,505,1,1,59.49
+Malad West,594,1,1,61.78
+Malad West,1167,2,3,137.49
+Thane West,923,2,2,111.05
+Bandra West,2022,4,4,437.89
+Chembur,1867,3,4,190.34
+Andheri East,1872,4,4,210.05
+Dadar West,1023,2,2,108.99
+Thane West,494,1,1,51.32
+Powai,1106,2,3,149.71
+Andheri East,1923,4,4,195.56
+Powai,2008,4,4,286.55
+Juhu,510,1,1,104.13
+Dadar West,1263,3,3,136.53
+Chembur,1048,2,2,124.85
+Juhu,1215,2,3,245.05
+Andheri East,1831,4,4,206.64
+Juhu,1269,2,3,306.08
+Powai,428,1,1,63.17
+Borivali West,1226,3,3,131.27
+Bandra West,1511,2,3,299.9
+Juhu,1313,2,3,317.65
+Andheri West,993,2,2,114.7
+Thane West,963,2,2,99.25
+Andheri East,1839,4,4,205.7
+Kandivali East,982,2,2,100.45
+Dadar West,2003,3,4,232.09
+Kandivali East,1842,4,4,205.17
+Thane West,1642,4,4,169.7
+Andheri East,1035,2,2,102.81
+Dadar West,835,2,2,87.5
+Thane West,1462,2,3,150.17
+Chembur,1511,3,3,176.91
+Thane West,547,1,1,59.36
+Bandra West,1706,3,4,385.43
+Chembur,1481,2,3,161.68
+Thane West,717,2,2,72.73
+Kandivali East,2131,4,4,233.43
+Dadar West,832,2,2,96.47
+Andheri West,2016,4,4,224.58
+Dadar West,818,2,2,81.91
+Dadar West,423,1,1,49.29
+Andheri East,946,2,2,100.37
+Goregaon East,650,1,1,69.61
+Chembur,2090,4,4,208.26
+Malad West,1274,3,3,130.21
+Dadar West,874,2,2,94.39
+Malad West,1645,3,4,179.35
+Thane West,535,1,1,63.94
+Andheri East,2499,3,4,283.14
+Powai,412,1,1,66.7
+Kandivali East,882,2,2,90.08
+Andheri West,590,1,1,61.64
+Malad West,1516,2,3,175.94
+Thane West,637,1,1,72.22
+Borivali West,455,1,1,53.8
+Bandra West,2125,4,4,510.18
+Bandra West,448,1,1,98.9
+Goregaon East,2435,4,4,281.71
+Borivali West,785,2,2,93.1
+Bandra West,1363,2,3,288.74
+Thane West,1233,2,3,128.79
+Goregaon East,848,2,2,97.88
+Chembur,2164,3,4,228.42
+Goregaon East,700,2,2,84.47
+Powai,1107,3,3,160.97
+Dadar West,536,1,1,57.31
+Borivali West,923,2,2,109.8
+Dadar West,487,1,1,48.39
+Goregaon East,962,2,2,102.59
+Powai,1408,3,3,195.52
+Dadar West,995,2,2,103.65
+Borivali West,2328,4,4,270.28
+Andheri East,894,2,2,91.67
+Chembur,1131,3,3,114.86
+Borivali West,2235,4,4,236.26
+Thane West,933,2,2,106.14
+Thane West,640,1,1,64.82
+Juhu,1930,3,4,464.32
+Goregaon East,1496,2,3,166.03
+Goregaon East,635,1,1,71.58
+Kandivali East,800,2,2,85.62
+Bandra West,855,2,2,190.49
+Powai,783,2,2,123.71
+Powai,906,2,2,131.7
+Goregaon East,934,2,2,103.35
+Borivali West,2113,4,4,239.71
+Juhu,1041,2,2,222.23
+Thane West,2418,3,4,247.31
+Powai,584,1,1,80.37
+Dadar West,1389,2,3,160.22
+Andheri East,522,1,1,59.45
+Andheri East,1487,3,3,168.44
+Chembur,1482,3,3,178.88
+Juhu,1703,3,4,411.18
+Andheri West,802,2,2,86.42
+Powai,2086,3,4,320.72
+Powai,515,1,1,72.28
+Goregaon East,468,1,1,49.55
+Powai,1969,3,4,299.79
+Thane West,1637,3,4,173.55
+Malad West,1162,2,3,123.68
+Borivali West,1244,3,3,123.33
+Borivali West,1683,3,4,196.53
+Chembur,1424,2,3,150.84
+Andheri East,971,2,2,101.61
+Juhu,749,2,2,158.31
+Kandivali East,1851,3,4,184.16
+Chembur,467,1,1,48.1
+Thane West,805,2,2,92.09
+Goregaon East,2103,3,4,229.48
+Chembur,880,2,2,103.89
+Andheri East,894,2,2,106.3
+Kandivali East,911,2,2,109.92
+Powai,947,2,2,130.08
+Malad West,2256,4,4,227.65
+Powai,1494,3,3,234.64
+Malad West,424,1,1,49.55
+Borivali West,1167,3,3,126.76
+Kandivali East,635,1,1,71.1
+Bandra West,411,1,1,86.65
+Malad West,439,1,1,52.76
+Chembur,1761,4,4,174.75
+Dadar West,1009,2,2,109.7
+Dadar West,768,2,2,87.61
+Bandra West,641,1,1,129.6
+Thane West,590,1,1,58.68
+Juhu,520,1,1,115.57
+Powai,474,1,1,74.68
+Malad West,1689,4,4,195.49
+Kandivali East,1195,2,3,142.34
+Andheri East,1036,2,2,118.73
+Thane West,509,1,1,57.75
+Dadar West,1398,3,3,147.01
+Malad West,1754,4,4,187.38
+Dadar West,2380,3,4,238.03
+Kandivali East,1328,2,3,147.31
+Goregaon East,876,2,2,99.58
+Borivali West,1544,3,3,175.41
+Chembur,1541,3,3,176.46
+Andheri East,1454,2,3,151.62
+Andheri West,1206,3,3,129.48
+Andheri West,562,1,1,65.38
+Bandra West,776,2,2,157.14
+Andheri East,545,1,1,61.91
+Thane West,2474,3,4,295.59
+Thane West,858,2,2,88.54
+Juhu,2119,3,4,465.17
+Andheri East,1215,3,3,137.55
+Kandivali East,1337,2,3,138.52
+Dadar West,1318,3,3,145.69
+Juhu,1127,3,3,266.53
+Powai,704,2,2,103.47
+Juhu,427,1,1,103.17
+Dadar West,1277,3,3,126.75
+Malad West,495,1,1,49.11
+Chembur,1492,2,3,155.15
+Malad West,2066,4,4,247.7
+Borivali West,1988,3,4,240.43
+Andheri West,965,2,2,103.48
+Malad West,953,2,2,111.99
+Powai,580,1,1,81.73
+Thane West,846,2,2,84.02
+Dadar West,495,1,1,50.03
+Dadar West,879,2,2,104.98
+Thane West,1320,3,3,130.69
+Juhu,904,2,2,183.28
+Bandra West,991,2,2,209.16
+Bandra West,739,2,2,173.99
+Kandivali East,952,2,2,106.89
+Bandra West,480,1,1,115.77
+Goregaon East,1187,2,3,137.73
+Powai,1750,3,4,276.81
+Thane West,2029,4,4,239.61
+Malad West,2236,4,4,230.63
+Chembur,1340,3,3,157.82
+Andheri East,565,1,1,65.74
+Andheri East,948,2,2,102.71
+Andheri West,1017,2,2,115.51
+Juhu,641,1,1,146.31
+Thane West,741,2,2,89.19
+Powai,1430,2,3,200.9
+Thane West,780,2,2,88.54
+Dadar West,1217,2,3,145.89
+Andheri West,1540,3,3,171.7
+Thane West,772,2,2,92.7
+Bandra West,1410,2,3,284.85
+Juhu,813,2,2,161.66
+Chembur,991,2,2,105.0
+Andheri West,2406,4,4,264.7
+Andheri West,734,2,2,81.37
+Thane West,1336,2,3,155.38
+Kandivali East,563,1,1,58.97
+Kandivali East,574,1,1,58.95
+Malad West,437,1,1,44.95
+Juhu,1217,2,3,273.83
+Andheri West,787,2,2,87.27
+Borivali West,934,2,2,98.03
+Andheri West,553,1,1,57.25
+Andheri West,636,1,1,67.43
+Powai,2255,3,4,312.07
+Goregaon East,602,1,1,67.02
+Kandivali East,492,1,1,50.99
+Goregaon East,957,2,2,114.61
+Borivali West,1529,2,3,164.75
+Bandra West,594,1,1,123.77
+Kandivali East,755,2,2,83.13
+Dadar West,1981,3,4,231.41
+Chembur,582,1,1,64.82
+Andheri East,410,1,1,45.28
+Goregaon East,1879,3,4,221.99
+Malad West,1167,3,3,120.9
+Thane West,2377,3,4,248.68
+Bandra West,472,1,1,101.84
+Andheri East,1235,3,3,147.34
+Andheri East,456,1,1,45.45
+Goregaon East,440,1,1,48.37
+Dadar West,1221,2,3,133.88
+Bandra West,1466,3,3,300.98
+Chembur,912,2,2,103.5
+Dadar West,487,1,1,48.47
+Dadar West,754,2,2,84.03
+Borivali West,1130,3,3,123.19
+Andheri East,939,2,2,102.34
+Dadar West,1640,3,4,182.0
+Malad West,764,2,2,85.78
+Thane West,1411,2,3,161.58
+Borivali West,513,1,1,52.51
+Juhu,1046,2,2,248.01
+Kandivali East,1183,2,3,142.55
+Andheri East,1018,2,2,102.69
+Goregaon East,475,1,1,47.67
+Dadar West,415,1,1,50.13
+Goregaon East,977,2,2,102.28
+Malad West,434,1,1,47.41
+Goregaon East,778,2,2,86.82
+Kandivali East,2240,3,4,262.74
+Chembur,1482,3,3,150.2
+Juhu,1838,3,4,390.45
+Thane West,622,1,1,72.79
+Borivali West,1785,3,4,191.75
+Malad West,2271,4,4,242.78
+Borivali West,1522,2,3,182.47
+Dadar West,1194,3,3,127.84
+Kandivali East,1449,2,3,165.98
+Andheri East,448,1,1,46.25
+Bandra West,823,2,2,169.7
+Malad West,1016,2,2,118.77
+Malad West,1135,2,3,125.87
+Borivali West,2169,3,4,245.76
+Bandra West,1509,3,3,311.37
+Andheri West,1788,4,4,184.53
+Juhu,1363,3,3,273.55
+Kandivali East,603,1,1,71.97
+Chembur,1635,3,4,171.07
+Andheri West,417,1,1,45.62
+Powai,805,2,2,122.36
+Borivali West,501,1,1,50.14
+Juhu,2420,4,4,576.51
+Andheri West,813,2,2,96.76
+Bandra West,1121,2,3,224.35
+Chembur,968,2,2,109.8
+Thane West,2271,3,4,273.52
+Bandra West,626,1,1,127.64
+Malad West,914,2,2,100.11
+Powai,423,1,1,59.57
+Bandra West,1748,4,4,369.82
+Borivali West,922,2,2,111.22
+Goregaon East,442,1,1,51.03
+Goregaon East,641,1,1,67.0
+Dadar West,1466,3,3,151.74
+Bandra West,1365,2,3,320.62
+Chembur,1168,3,3,136.66
+Thane West,713,2,2,70.86
+Kandivali East,1943,4,4,215.53
+Thane West,863,2,2,100.83
+Andheri West,1411,3,3,149.81
+Andheri East,974,2,2,113.61
+Thane West,1538,2,3,178.97
+Borivali West,565,1,1,56.19
+Malad West,895,2,2,89.89
+Thane West,1143,2,3,115.41
+Juhu,406,1,1,97.11
+Goregaon East,1271,2,3,147.75
+Malad West,2132,4,4,213.62
+Kandivali East,700,2,2,74.11
+Dadar West,530,1,1,55.07
+Goregaon East,1646,4,4,187.28
+Powai,992,2,2,153.99
+Bandra West,1354,2,3,310.73
+Chembur,1233,3,3,130.24
+Powai,1194,2,3,169.34
+Malad West,893,2,2,98.36
+Kandivali East,1363,3,3,142.63
+Andheri East,1009,2,2,113.37
+Kandivali East,550,1,1,56.62
+Andheri East,2324,4,4,267.53
+Goregaon East,478,1,1,50.35
+Dadar West,544,1,1,59.16
+Juhu,488,1,1,98.04
+Bandra West,1535,2,3,304.78
+Juhu,1422,3,3,308.3
+Kandivali East,2395,4,4,282.25
+Andheri East,506,1,1,60.41
+Dadar West,2220,4,4,230.45
+Powai,1522,2,3,206.63
+Powai,537,1,1,78.07
+Goregaon East,2231,3,4,241.38
+Juhu,796,2,2,189.28
+Goregaon East,1845,3,4,215.44
+Bandra West,1891,4,4,394.66
+Juhu,1409,2,3,324.1
+Juhu,782,2,2,185.48
+Kandivali East,566,1,1,63.84
+Dadar West,1731,4,4,206.67
+Andheri East,702,2,2,79.95
+Juhu,496,1,1,102.37
+Dadar West,1333,2,3,151.13
+Chembur,646,1,1,75.73
+Powai,1219,3,3,197.85
+Dadar West,1181,3,3,141.46
+Andheri West,471,1,1,56.88
+Thane West,615,1,1,71.67
+Juhu,1189,3,3,245.75
+Borivali West,590,1,1,61.11
+Borivali West,861,2,2,86.15
+Powai,409,1,1,64.23
+Goregaon East,490,1,1,52.25
+Andheri West,1785,3,4,206.35
+Andheri West,722,2,2,80.03
+Malad West,2352,4,4,269.83
+Malad West,435,1,1,50.95
+Andheri East,876,2,2,102.69
+Andheri East,834,2,2,83.51

@@ -1,24 +1,51 @@
 import { useState, useEffect } from 'react';
 
 export default function App() {
-  const [locations, setLocations] = useState([]);
-  const [formData, setFormData] = useState({ total_sqft: 1200, bhk: 2, bath: 2, location: '' });
+  const [availableCities, setAvailableCities] = useState([]);
+  const [locationsMap, setLocationsMap] = useState({});
+  const [currentLocations, setCurrentLocations] = useState([]);
+  
+  const [formData, setFormData] = useState({ city: '', location: '', total_sqft: 1200, bhk: 2, bath: 2 });
   const [prediction, setPrediction] = useState(null);
   const [loading, setLoading] = useState(false);
   const [areaError, setAreaError] = useState('');
 
-  // Fetch unique locations from Flask backend on mount
+  // Fetch unique cities and their locations from Flask backend on mount
   useEffect(() => {
     fetch('https://bangalore-house-price-api.onrender.com/api/metadata')
       .then(res => res.json())
       .then(data => {
-        setLocations(data.locations);
-        if (data.locations.length > 0) {
-          setFormData(prev => ({ ...prev, location: data.locations[0] }));
+        setAvailableCities(data.cities);
+        setLocationsMap(data.locations_map);
+        
+        if (data.cities.length > 0) {
+          const defaultCity = data.cities[0];
+          const cityLocations = data.locations_map[defaultCity] || [];
+          
+          setCurrentLocations(cityLocations);
+          setFormData(prev => ({ 
+            ...prev, 
+            city: defaultCity, 
+            location: cityLocations.length > 0 ? cityLocations[0] : '' 
+          }));
         }
       })
-      .catch(err => console.error("Error fetching locations:", err));
+      .catch(err => console.error("Error fetching metadata:", err));
   }, []);
+
+  // Handle City Change Logic
+  const handleCityChange = (e) => {
+    const selectedCity = e.target.value;
+    const cityLocations = locationsMap[selectedCity] || [];
+    
+    setCurrentLocations(cityLocations);
+    setFormData(prev => ({
+      ...prev,
+      city: selectedCity,
+      location: cityLocations.length > 0 ? cityLocations[0] : ''
+    }));
+    setPrediction(null); // Reset prediction when city changes
+  };
 
   const handlePredict = async (e) => {
     e.preventDefault();
@@ -82,7 +109,6 @@ export default function App() {
     }
   };
 
-  // Enforces valid dataset baseline limits when user finishes typing
   const handleBlurValidation = (field, minValue) => {
     if (formData[field] === "" || formData[field] < minValue) {
       setFormData(prev => ({ ...prev, [field]: minValue }));
@@ -108,28 +134,49 @@ export default function App() {
             </h1>
           </div>
           <p className="text-slate-400 text-sm leading-relaxed">
-            Enterprise real estate valuation model trained on historical Bengaluru housing data vectors.
+            Pan-India enterprise real estate valuation model trained on historical data vectors.
           </p>
         </div>
 
         {/* Input Form Layout */}
         <form onSubmit={handlePredict} className="space-y-6">
           
-          {/* Location Picker */}
-          <div>
-            <label className="block text-xs font-semibold tracking-wider uppercase mb-2 text-slate-400">
-              Target Neighborhood Location
-            </label>
-            <div className="relative">
-              <select 
-                value={formData.location}
-                onChange={(e) => setFormData({...formData, location: e.target.value})}
-                className="w-full bg-slate-950/80 border border-slate-800 rounded-xl p-3.5 px-4 text-slate-200 focus:outline-none focus:border-emerald-500/80 focus:ring-1 focus:ring-emerald-500/30 transition-all appearance-none cursor-pointer text-sm"
-              >
-                {locations.map(loc => <option key={loc} value={loc} className="bg-slate-950 text-slate-300">{loc}</option>)}
-              </select>
-              <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-slate-500">
-                ▼
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+            {/* City Picker */}
+            <div>
+              <label className="block text-xs font-semibold tracking-wider uppercase mb-2 text-slate-400">
+                Select City
+              </label>
+              <div className="relative">
+                <select 
+                  value={formData.city}
+                  onChange={handleCityChange}
+                  className="w-full bg-slate-950/80 border border-slate-800 rounded-xl p-3.5 px-4 text-slate-200 focus:outline-none focus:border-emerald-500/80 focus:ring-1 focus:ring-emerald-500/30 transition-all appearance-none cursor-pointer text-sm capitalize"
+                >
+                  {availableCities.map(city => <option key={city} value={city} className="bg-slate-950 text-slate-300">{city}</option>)}
+                </select>
+                <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-slate-500">
+                  ▼
+                </div>
+              </div>
+            </div>
+
+            {/* Location Picker */}
+            <div>
+              <label className="block text-xs font-semibold tracking-wider uppercase mb-2 text-slate-400">
+                Target Neighborhood
+              </label>
+              <div className="relative">
+                <select 
+                  value={formData.location}
+                  onChange={(e) => setFormData({...formData, location: e.target.value})}
+                  className="w-full bg-slate-950/80 border border-slate-800 rounded-xl p-3.5 px-4 text-slate-200 focus:outline-none focus:border-emerald-500/80 focus:ring-1 focus:ring-emerald-500/30 transition-all appearance-none cursor-pointer text-sm"
+                >
+                  {currentLocations.map(loc => <option key={loc} value={loc} className="bg-slate-950 text-slate-300">{loc}</option>)}
+                </select>
+                <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-slate-500">
+                  ▼
+                </div>
               </div>
             </div>
           </div>
@@ -183,7 +230,7 @@ export default function App() {
 
           </div>
 
-          {/* 🔴 Real-time Inline Notification Message */}
+          {/* Real-time Inline Notification Message */}
           {areaError && (
             <div className="text-red-400 text-xs font-semibold tracking-wide flex items-center space-x-1.5 animate-pulse bg-red-950/30 p-2.5 rounded-lg border border-red-900/30">
               <span>⚠️</span>
