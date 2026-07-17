@@ -15,12 +15,17 @@ export default function App() {
     fetch('https://bangalore-house-price-api.onrender.com/api/metadata')
       .then(res => res.json())
       .then(data => {
-        setAvailableCities(data.cities);
-        setLocationsMap(data.locations_map);
+        // Fallback arrays to prevent 'undefined' crash while backend updates
+        const fetchedCities = data.cities || [];
+        const fetchedLocations = data.locations_map || {};
         
-        if (data.cities.length > 0) {
-          const defaultCity = data.cities[0];
-          const cityLocations = data.locations_map[defaultCity] || [];
+        setAvailableCities(fetchedCities);
+        setLocationsMap(fetchedLocations);
+        
+        // Safe length check
+        if (fetchedCities && fetchedCities.length > 0) {
+          const defaultCity = fetchedCities[0];
+          const cityLocations = fetchedLocations[defaultCity] || [];
           
           setCurrentLocations(cityLocations);
           setFormData(prev => ({ 
