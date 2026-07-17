@@ -1,36 +1,7 @@
-import subprocess
-import sys
-import os
-
-# ========================================================
-# 🚀 AUTOMATIC DEPENDENCY INSTALLER FOR RENDER
-# ========================================================
-try:
-    import flask
-    import flask_cors
-    import pandas
-    import numpy
-    import sklearn
-except ImportError:
-    print("⏳ Auto-installing missing dependencies on Render...")
-    try:
-        # Agar root directory configuration ka issue ho, toh dono paths check karega
-        if os.path.exists("requirements.txt"):
-            subprocess.check_call([sys.executable, "-m", "pip", "install", "-r", "requirements.txt"])
-        elif os.path.exists("backend/requirements.txt"):
-            subprocess.check_call([sys.executable, "-m", "pip", "install", "-r", "backend/requirements.txt"])
-        else:
-            # Agar file nahi bhi mili, toh explicit packages install kar dega
-            subprocess.check_call([sys.executable, "-m", "pip", "install", "flask", "flask-cors", "pandas", "numpy", "scikit-learn"])
-    except Exception as e:
-        print(print(f"❌ Auto-installation failed: {str(e)}"))
-
-# ========================================================
-# 💻 API GATEWAY & MACHINE LEARNING SERVER CODE
-# ========================================================
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import numpy as np
+import os
 from predict import load_and_clean_data, train_ml_model
 
 app = Flask(__name__)
@@ -44,7 +15,6 @@ locations = []
 def initialize_backend():
     global model, feature_columns, locations
     
-    # Dataset path alignment validation
     csv_path = "./dataset/bangalore_house_data.csv"
     if not os.path.exists(csv_path) and os.path.exists("backend/dataset/bangalore_house_data.csv"):
         csv_path = "backend/dataset/bangalore_house_data.csv"
@@ -65,7 +35,6 @@ initialize_backend()
 
 @app.route('/api/metadata', methods=['GET'])
 def get_metadata():
-    # Sends the list of locations to React so it can populate the dropdown menu dynamically
     return jsonify({"locations": locations})
 
 @app.route('/api/predict', methods=['POST'])
@@ -77,7 +46,6 @@ def predict():
         bhk = int(data['bhk'])
         selected_location = data['location']
         
-        # Construct the feature vector
         input_vector = np.zeros(len(feature_columns))
         input_vector[feature_columns.index('total_sqft')] = total_sqft
         input_vector[feature_columns.index('bath')] = bath
@@ -94,6 +62,5 @@ def predict():
         return jsonify({"error": str(e)}), 400
 
 if __name__ == '__main__':
-    # Render assigns a dynamic port automatically, fallback to 5000 for local testing
     port = int(os.environ.get("PORT", 5000))
     app.run(host='0.0.0.0', port=port)
