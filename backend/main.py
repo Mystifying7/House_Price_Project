@@ -1,7 +1,10 @@
 import subprocess
 import sys
+import os
 
-# Script run hote hi sabse pehle automatically background mein libraries install ho jayengi
+# ========================================================
+# 🚀 AUTOMATIC DEPENDENCY INSTALLER FOR RENDER
+# ========================================================
 try:
     import flask
     import flask_cors
@@ -10,11 +13,21 @@ try:
     import sklearn
 except ImportError:
     print("⏳ Auto-installing missing dependencies on Render...")
-    subprocess.check_call([sys.executable, "-m", "pip", "install", "-r", "requirements.txt"])
+    try:
+        # Agar root directory configuration ka issue ho, toh dono paths check karega
+        if os.path.exists("requirements.txt"):
+            subprocess.check_call([sys.executable, "-m", "pip", "install", "-r", "requirements.txt"])
+        elif os.path.exists("backend/requirements.txt"):
+            subprocess.check_call([sys.executable, "-m", "pip", "install", "-r", "backend/requirements.txt"])
+        else:
+            # Agar file nahi bhi mili, toh explicit packages install kar dega
+            subprocess.check_call([sys.executable, "-m", "pip", "install", "flask", "flask-cors", "pandas", "numpy", "scikit-learn"])
+    except Exception as e:
+        print(print(f"❌ Auto-installation failed: {str(e)}"))
 
-# ==========================================
-# AAPKA ORIGINAL CODE AB YAHA SE START HOGA:
-# ==========================================
+# ========================================================
+# 💻 API GATEWAY & MACHINE LEARNING SERVER CODE
+# ========================================================
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import numpy as np
@@ -30,7 +43,12 @@ locations = []
 
 def initialize_backend():
     global model, feature_columns, locations
+    
+    # Dataset path alignment validation
     csv_path = "./dataset/bangalore_house_data.csv"
+    if not os.path.exists(csv_path) and os.path.exists("backend/dataset/bangalore_house_data.csv"):
+        csv_path = "backend/dataset/bangalore_house_data.csv"
+        
     data = load_and_clean_data(csv_path)
     
     # Extract feature column names expected by the ML model
@@ -76,7 +94,6 @@ def predict():
         return jsonify({"error": str(e)}), 400
 
 if __name__ == '__main__':
-    import os
     # Render assigns a dynamic port automatically, fallback to 5000 for local testing
     port = int(os.environ.get("PORT", 5000))
     app.run(host='0.0.0.0', port=port)
