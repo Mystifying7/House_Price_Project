@@ -23,8 +23,8 @@ export default function App() {
     e.preventDefault();
     setLoading(true);
     try {
-      const response = await fetch('https://bangalore-house-price-api.onrender.com/api/metadata'
-      , {
+      // ✅ ENDPOINT FIXED: Changed from /api/metadata to /api/predict
+      const response = await fetch('https://bangalore-house-price-api.onrender.com/api/predict', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
