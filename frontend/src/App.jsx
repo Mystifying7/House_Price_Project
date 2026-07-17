@@ -21,9 +21,15 @@ export default function App() {
 
   const handlePredict = async (e) => {
     e.preventDefault();
+    
+    // Prevent sub-standard area queries before firing API payload
+    if (formData.total_sqft < 300) {
+      alert("Area cannot be less than 300 Sq. Ft. for accurate ML prediction.");
+      return;
+    }
+
     setLoading(true);
     
-    // Fallback numbers before sending payload to API if inputs were left empty/0
     const finalPayload = {
       ...formData,
       total_sqft: formData.total_sqft || 300,
@@ -61,6 +67,13 @@ export default function App() {
       setFormData(prev => ({ ...prev, [field]: "" }));
     } else {
       setFormData(prev => ({ ...prev, [field]: parseInt(value) || 0 }));
+    }
+  };
+
+  // Enforces valid dataset baseline limits when user finishes typing
+  const handleBlurValidation = (field, minValue) => {
+    if (formData[field] === "" || formData[field] < minValue) {
+      setFormData(prev => ({ ...prev, [field]: minValue }));
     }
   };
 
@@ -118,8 +131,10 @@ export default function App() {
               </label>
               <input 
                 type="number" 
+                min="1"
                 value={formData.bhk}
                 onChange={(e) => handleInputChange('bhk', e.target.value)}
+                onBlur={() => handleBlurValidation('bhk', 1)}
                 className="w-full bg-transparent text-2xl font-bold text-slate-100 focus:outline-none border-b border-transparent focus:border-emerald-500/40 pb-1" 
               />
             </div>
@@ -131,8 +146,10 @@ export default function App() {
               </label>
               <input 
                 type="number" 
+                min="1"
                 value={formData.bath}
                 onChange={(e) => handleInputChange('bath', e.target.value)}
+                onBlur={() => handleBlurValidation('bath', 1)}
                 className="w-full bg-transparent text-2xl font-bold text-slate-100 focus:outline-none border-b border-transparent focus:border-emerald-500/40 pb-1" 
               />
             </div>
@@ -144,8 +161,10 @@ export default function App() {
               </label>
               <input 
                 type="number" 
+                min="300"
                 value={formData.total_sqft}
                 onChange={(e) => handleInputChange('total_sqft', e.target.value)}
+                onBlur={() => handleBlurValidation('total_sqft', 300)}
                 className="w-full bg-transparent text-2xl font-bold text-slate-100 focus:outline-none border-b border-transparent focus:border-emerald-500/40 pb-1" 
               />
             </div>
